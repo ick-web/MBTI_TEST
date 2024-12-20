@@ -1,0 +1,234 @@
+/* Importing Googole fonts */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+:root {
+    /*Colors_light mode*/
+    --base-color: #fff;
+    --base-variant: #dcdcdc;
+    --text-color: #454545;
+    --primary-color: #649AFF;
+    --accent-color: #F0C808;
+
+}
+
+* {
+    font-family: "Nanum Gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #454545;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #ffffff;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+#title {
+    width: 900px;
+    margin: 100px auto 800px;
+    align-items: center;
+}
+
+.container {
+    max-width: 700px;
+    margin: 500px auto 200px;
+    padding: 100px 30px 100px;
+    background: #649AFF;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 50px;
+    margin: 0 0 200px 50px;
+    color: #649AFF;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    float: left;
+}
+
+.main_image {
+    width: 450px;
+    float: right;
+}
+
+.button {
+    background-color: #ffe45b;
+    border: none;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-top: 40px;
+    padding: 15px 25px 15px 25px;
+    font-size: 14px;
+}
+
+.button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.button:hover {
+    background-color: #f8d72f;
+    cursor: pointer;
+}
+
+.button:active {
+    transform: scale(0.9);
+    transition: 0.3s;
+}
+
+.question {
+    margin-bottom: 270px;
+    text-align: center;
+
+}
+
+.question p {
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 60px;
+    color: #fff;
+    padding-top: 40px;
+}
+
+.question button {
+    color: #ffe45b;
+    background: none;
+    font-size: 30px;
+}
+
+.question button:hover {
+    color: #c7af36;
+    background: none;
+    font-size: 30px;
+}
+
+label {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 7%;
+    align-content: center;
+    font-size: 16px;
+    cursor: pointer;
+    margin: auto 20px auto 20px;
+    font-weight: 700;
+    line-height: 25px;
+    padding-bottom: 10px;
+}
+
+label:hover {
+    background-color: #dcdcdc;
+}
+
+label:active {
+    transform: scale(0.9);
+    transition: 0.1s;
+    border-radius: 7%;
+    background-color: #ffad76;
+
+}
+
+.input:checked+label {
+    transform: scale(0.9);
+    background-color: #ffad76
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.clicked {
+    background-color: #ffad76;
+    pointer-events: none;
+}
+
+#submit-button {
+    background-color: #649AFF;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+#submit-button:hover {
+    background-color: #3d80fd;
+    transition: 0.7s;
+}
+
+#submit-button:active {
+    background-color: #0b51d2;
+    transform: scale(0.9);
+    transition: 0.2s;
+}
+
+#result {
+    margin: 25px;
+    padding: 25px 25px 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#result h2 {
+    font-size: 20px;
+    color: #454545;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+#result p {
+    font-size: 16px;
+    color: #454545;
+}
+
+.hide {
+    display: none;
+}
+
+.otherimg {
+    width: 250px;
+    height: 220px;
+}
+
+.background {
+    position: absolute;
+    align-self: center;
+    opacity: 30%;
+}
+
+input[type="radio"] {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+}
+
+div {
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range: entry 30%;
+}

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MBTI Test</title>
+        <link href="styles.css" rel="stylesheet" />
+</head>
+<script src="script.js" defer></script>
+
+<body>
+        <section id="title">
+                <h1 id="TITLE">나의 MBTI는?<br><button class="button" onclick="goToSection('quiz-form')">지금 확인하기</button>
+                </h1>
+                <img class="main_image" src="./images/team-presentation.svg" alt="team working together">
+        </section>
+        <section class="container">
+                <form id="quiz-form">
+                        <div class="question">
+                                <p id="qu1">1. 친구가 같이 놀자는데 괜찮?</p>
+                                <label for="q1_1"><input type="radio" class="input" name="q1" id="q1_1" value="E"><img
+                                                class="otherimg" src="./images/party.svg" alt="having fun"><br> 그럼
+                                        당연하지</label>
+                                <label for="q1_2"><input type="radio" class="input" name="q1" id="q1_2" value="I"><img
+                                                class="otherimg" src="./images/neutral-face.svg" alt="surprised"><br> 어?
+                                        좀 그런데...</label>
+                                <button class="button" id="left_bt" type="button" onclick="goToSection('TITLE')">&#129144;</button>
+                                <button class="button" id="right_bt" type="button" onclick="goToSection('qu2')">&#129146;</button>
+                        </div>
+
+                        <div class="question">
+                                <p id="qu2">2. 멍 때린다는 건?</p>
+                                <label for="q2_1"><input type="radio" class="input" name="q2" id="q2_1" value="S"><img
+                                                class="otherimg" src="./images/resting.svg" alt="thoughts"><br> 아무 생각
+                                        안하는 것</label>
+                                <label for="q2_2"><input type="radio" class="input" name="q2" id="q2_2" value="N"><img
+                                                class="otherimg" src="./images/dream.svg" alt="imagine"><br> 망상의
+                                        폭주</label>
+                                <button class="button" id="left_bt" onclick="goToSection('qu1')">&#129144;</button>
+                                <button class="button" id="right_bt" onclick="goToSection('qu3')">&#129146;</button>
+                        </div>
+
+                        <div class="question">
+                                <p id="qu3">3. 나 우울해서 빵 샀어</p>
+                                <label for="q3_1"><input type="radio" class="input" name="q3" id="q3_1" value="T"><img
+                                                class="otherimg" src="./images/question.svg" alt="question"><br> 무슨
+                                        빵?</label>
+                                <label for="q3_2"><input type="radio" class="input" name="q3" id="q3_2" value="F"><img
+                                                class="otherimg" src="./images/sad-face.svg" alt="thoughts"><br> 왜?
+                                        무슨일인데, 왜 우울해?</label>
+                                <button class="button" id="left_bt" onclick="goToSection('qu2')">&#129144;</button>
+                                <button class="button" id="right_bt" onclick="goToSection('qu4')">&#129146;</button>
+                        </div>
+
+                        <div class="question">
+                                <p id="qu4">4. 두근두근 해외여행! 당신은?</p>
+                                <label for="q4_1"><input type="radio" class="input" name="q4" id="q4_1" value="J"><img
+                                                class="otherimg" src="./images/travel-planning.svg" alt="thoughts"><br>
+                                        계획 없이는 불안해</label>
+                                <label for="q4_2"><input type="radio" class="input" name="q4" id="q4_2" value="P"><img
+                                                class="otherimg" src="./images/map.svg" alt="thoughts"><br>
+                                        몸이 이끄는 여행</label>
+                                <button class="button" id="left_bt" onclick="goToSection('qu3')">&#129144;</button>
+                                <button class="button" id="right_bt" onclick="goToSection('qu5')">&#129146;</button>
+                        </div>
+
+                        <div class="question">
+                                <p id="qu5">5. 지금 영화를 보고 싶은 당신! 어떻게 관람할건가요</p>
+                                <label for="q5_1"><input type="radio" class="input" name="q5" id="q5_1" value="E"><img
+                                                class="otherimg" src="./images/TV shows.svg" alt="thoughts"><br> 영화관에서
+                                        영화 관람</label>
+                                <label for="q5_2"><input type="radio" class="input" name="q5" id="q5_2" value="I"><img
+                                                class="otherimg" src="./images/gaming.svg" alt="thoughts"><br> 방구석 1열에서
+                                        영화 관람</label>
+                                <button class="button" id="left_bt" onclick="goToSection('qu4')">&#129144;</button>
+                                <button class="button" id="right_bt" onclick="goToSection('qu6')">&#129146;</button>
+                        </div>
+
+                        <div class="question">
+                                <p id="qu6">6. 비행기 타기 전에 무슨 생각해?</p>
+                                <label for="q6_1"><input type="radio" class="input" name="q6" id="q6_1" value="S"><img
+                                                class="otherimg" src="./images/thinking.svg" alt="thoughts"><br> 기내식 뭐
+                                        나오지? <br>영화볼까?</label>
+                                <label for="q6_2"><input type="radio" class="input" name="q6" id="q6_2" value="N"><img
+                                                class="otherimg" src="./images/augmented-reality.svg"
+                                                alt="thoughts"><br> 비행기가 추락하면 어쩌지.<br> 비상구
+                                        자리에 앉을까?</label>
+                                <button class="button" id="left_bt" onclick="goToSection('qu5')">&#129144;</button>
+                                <button class="button" id="right_bt" onclick="goToSection('qu7')">&#129146;</button>
+                        </div>
+
+                        <div class="question">
+                                <p id="qu7">7. 나 교통사고 났어</p>
+                                <label for="q7_1"><input type="radio" class="input" name="q7" id="q7_1" value="T"><img
+                                                class="otherimg" src="./images/analyst.svg" alt="thoughts"><br> 보험은
+                                        들어놨어? 누구 과실이야?</label>
+                                <label for="q7_2"><input type="radio" class="input" name="q7" id="q7_2" value="F"><img
+                                                class="otherimg" src="./images/marketing.svg" alt="thoughts"><br> 어머! 많이
+                                        다쳤어? 괜찮아?</label>
+                                <button class="button" id="left_bt" onclick="goToSection('qu6')">&#129144;</button>
+                                <button class="button" id="right_bt" onclick="goToSection('qu8')">&#129146;</button>
+                        </div>
+
+                        <div class="question">
+                                <p id="qu8">8. 과제 제출기간이 남았을때 언제 제출할지?</p>
+                                <label for="q8_1"><input type="radio" class="input" name="q8" id="q8_1" value="P"><img
+                                                class="otherimg" src="./images/balloon.svg" alt="thoughts"><br> 딱 맞추는게
+                                        최고! <br>마감 1분전에 제출!</label>
+                                <label for="q8_2"><input type="radio" class="input" name="q8" id="q8_2" value="J"><img
+                                                class="otherimg" src="./images/calendar.svg" alt="thoughts"><br> 빨리
+                                        끝내야하니 <br>일주일전에 제출해야지!</label>
+                                <button class="button" id="left_bt" onclick="goToSection('qu7')">&#129144;</button>
+                                <button class="button" id="right_bt" onclick="goToSection('qu9')">&#129146;</button>
+                        </div>
+
+                        <div class="question">
+                                <p id="qu9">9. 길 가다 멀리서 아는 사람을 봤을 때 당신의 반응은?</p>
+                                <label for="q9_1"><input type="radio" class="input" name="q9" id="q9_1" value="E"><img
+                                                class="otherimg" src="./images/diversity.svg" alt="thoughts"><br> 그 사람이
+                                        있는 곳으로 가 <br>인사한다.</label>
+                                <label for="q9_2"><input type="radio" class="input" name="q9" id="q9_2" value="I"><img
+                                                class="otherimg" src="./images/bicycle.svg" alt="thoughts"><br> 나중에 또
+                                        볼테니 굳이 <br>아는 척하지 않는다.</label>
+                                <button class="button" id="left_bt" onclick="goToSection('qu8')">&#129144;</button>
+                                <button class="button" id="right_bt" onclick="goToSection('qu10')">&#129146;</button>
+                        </div>
+
+                        <div class="question">
+                                <p id="qu10">10. 당신은 가끔...</p>
+                                <label for="q10_1"><input type="radio" class="input" name="q10" id="q10_1"
+                                                value="S"><img class="otherimg" src="./images/analyst.svg"
+                                                alt="thoughts"><br> 내가 돈을 많이 벌기 위해 <br>어떤 일을 할지
+                                        걱정이 된다</label>
+                                <label for="q10_2"><input type="radio" class="input" name="q10" id="q10_2"
+                                                value="N"><img class="otherimg" src="./images/rocket-boy.svg"
+                                                alt="thoughts"><br> 인간이 젤리라면 같은 <br>터무니 없는 상상을
+                                        한다</label>
+                                <button class="button" id="left_bt" onclick="goToSection('qu9')">&#129144;</button>
+                                <button class="button" id="right_bt" onclick="goToSection('qu11')">&#129146;</button>
+                        </div>
+
+                        <div class="question">
+                                <p id="qu11">11. 야야 나 꿈 꿨는데 꿈에서 무서운 사람이 공격하는 꿈 꿨어!</p>
+                                <label for="q11_1"><input type="radio" class="input" name="q11" id="q11_1"
+                                                value="T"><img class="otherimg" src="./images/marketing-campaign.svg"
+                                                alt="thoughts"><br> 헐 해몽이 뭐야</label>
+                                <label for="q11_2"><input type="radio" class="input" name="q11" id="q11_2"
+                                                value="F"><img class="otherimg" src="./images/conversation.svg"
+                                                alt="thoughts"><br> 헐 무서웠겠다</label>
+                                <button class="button" id="left_bt" onclick="goToSection('qu10')">&#129144;</button>
+                                <button class="button" id="right_bt" onclick="goToSection('qu12')">&#129146;</button>
+                        </div>
+
+                        <div class="question">
+                                <p id="qu12">12. 아침에 일어났을때, 당신은?</p>
+                                <label for="q12_1"><input type="radio" class="input" name="q12" id="q12_1"
+                                                value="J"><img class="otherimg" src="./images/note-taking.svg"
+                                                alt="thoughts"><br> 오늘 뭐할지 생각한다.</label>
+                                <label for="q12_2"><input type="radio" class="input" name="q12" id="q12_2"
+                                                value="P"><img class="otherimg" src="./images/chatting.svg"
+                                                alt="thoughts"><br> 누워서 핸드폰 본다.</label>
+                                <button class="button" id="left_bt" onclick="goToSection('qu11')">&#129144;</button>
+                                <button class="button" id="right_bt"
+                                type="button" onclick="goToSection('submit-button')">&#129146;</button>
+                        </div>
+
+                        <button onclick="calculateResult()" id="submit-button" type="button">결과 확인하기 &#128073; </button>
+                </form>
+                <div id="result" class="hide">
+                        <h2>당신의 성격 유형은?</h2>
+                        <p id="result-text">결과가 여기에 표시됩니다.</p>
+                        <button id="submit-button" onclick="resetQuiz()">다시 시작하기</button>
+                </div>
+        </section>
+</body>
+
+</html>
